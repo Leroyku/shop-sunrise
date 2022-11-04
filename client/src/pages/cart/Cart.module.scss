@@ -1,0 +1,59 @@
+$orange: #fb9118;
+
+.root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  padding: 50px 50px;
+  border-radius: 10px;
+  background-color: #161616;
+  height: fit-content;
+  width: calc(100% - 100% / 2.5 - 3px);
+}
+.right {
+  position: sticky;
+  top: 70px;
+  border-radius: 10px;
+  background-color: #161616;
+  height: fit-content;
+  width: calc(100% / 2.5);
+}
+
+.up {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 26px;
+  color: $orange;
+}
+
+.deleteAll {
+  font-size: 22px;
+  color: rgba(92, 92, 92, 0.6);
+
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    color: rgba(92, 92, 92, 1);
+  }
+  &:active {
+    color: rgba(92, 92, 92, 0.8);
+  }
+}
+.empty {
+  font-size: 22px;
+  color: rgba(92, 92, 92, 0.6);
+}
+
+.bottom {
+  font-size: 26px;
+  color: rgba(92, 92, 92, 1);
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
