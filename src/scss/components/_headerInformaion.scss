@@ -1,0 +1,68 @@
+.header-information {
+  background-color: #161616;
+  // border-bottom: solid #222222;
+
+  padding: 5px 10px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .company-name {
+    h1 {
+      font-family: 'Rubik Dirt';
+      color: $orange;
+      font-size: 36px;
+      letter-spacing: 1%;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 18px;
+      color: #8a8a8d;
+    }
+  }
+  .contacts {
+    .standart {
+      div {
+        display: flex;
+        justify-content: end;
+        padding: 2px 0;
+      }
+
+      &__social {
+        align-items: center;
+        p {
+          font-family: 'Rubik Dirt';
+          font-size: 26px;
+          color: $orange;
+        }
+      }
+
+      &__icon {
+        margin-left: 20px;
+        display: inline;
+        align-items: center;
+        color: $orange;
+        p {
+          font-size: 18px;
+          margin-left: 5px;
+          color: #8a8a8d;
+        }
+        span {
+          color: #8a8a8d;
+          font-weight: 800;
+        }
+      }
+
+      .social-icon {
+        margin-left: 10px;
+        a {
+          font-size: 25px;
+          color: $orange;
+        }
+      }
+    }
+  }
+}

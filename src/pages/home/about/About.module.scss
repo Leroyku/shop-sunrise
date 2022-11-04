@@ -1,0 +1,29 @@
+$orange: rgb(251, 145, 24);
+
+.root {
+  min-height: 373px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: $orange;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    // text-align: justify;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #8a8a8d;
+  }
+}
+
+.icons {
+  padding-right: 3px;
+}

@@ -1,0 +1,93 @@
+$orange: rgb(251, 145, 24);
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  flex: 1 1 auto;
+
+  h1 {
+    color: $orange;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    line-height: 30px;
+    color: $orange;
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+    color: #8a8a8d;
+  }
+}
+
+.blockUp {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px 40px 0;
+  background-color: #161616;
+  display: flex;
+  justify-content: space-between;
+}
+.block {
+  border-radius: 10px;
+  padding: 10px 40px;
+  background-color: #161616;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  margin: auto;
+  margin-left: 0;
+  width: 50%;
+}
+.text {
+  margin-bottom: 10px;
+}
+
+.right {
+  margin: auto;
+  width: 50%;
+  margin-left: 0;
+
+  a {
+    color: $orange;
+  }
+  p {
+    color: #8a8a8d;
+    margin-left: 5px;
+  }
+
+  .links {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: $orange;
+    font-size: 22px;
+  }
+
+  .vkIcon {
+    h2 {
+      display: flex;
+      align-items: center;
+    }
+    a {
+      margin-left: 20px;
+      font-size: 40px;
+    }
+  }
+}
+
+.image {
+  width: 42%;
+  margin-right: 40px;
+}
+
+.center {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 40px 10px;
+  background-color: #161616;
+  margin-bottom: 3px;
+}
