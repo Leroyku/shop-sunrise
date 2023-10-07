@@ -1,0 +1,109 @@
+$orange: rgb(251, 145, 24);
+
+.menu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 999;
+  padding-right: 20px;
+  width: 100%;
+  max-height: 80%; /* Limit the menu's height to 80% of the viewport */
+  background-color: #161616; /* Semi-transparent black background */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the screen height */
+  transform: translateX(-100%); /* Initially move the menu off-screen */
+  transition: transform 0.3s ease-in-out; /* Smooth transition when showing/hiding the menu */
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.itemLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0 7px;
+  color: $orange;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(251, 145, 24, 0.3);
+}
+
+.icons {
+  color: $orange;
+  min-width: 20px;
+  margin: 0 5px 0 20px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 9px;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories {
+  display: flex;
+  padding: 9px 0;
+  color: $orange;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.expandedMenu {
+  display: flex !important;
+  flex-direction: column;
+  margin-left: 55px;
+}
+
+.none {
+  display: none;
+}
+
+/* Media query for iPad-sized devices */
+@media (min-width: 450px) and (max-width: 1065px) {
+  .menu {
+    /* Adjust the width for iPad-sized devices */
+    width: 300px;
+    transform: translateX(0); /* Move the menu back into the screen when it's active */
+  }
+}
+
+/* Media query for devices up to 768px (including phones) */
+@media (max-width: 450px) {
+  .menu {
+    /* Adjust the width for smaller devices */
+    width: 100%;
+    max-height: 90%;
+    transform: translateX(0);
+  }
+}
+/* Existing CSS code for .menu and other styles can remain the same */
+
+/* Media query for devices up to 320px (iPhone 5SE width) */
+// @media (max-width: 320px) {
+//   .menu {
+//     /* Reduce the top position to avoid overlapping with the device's status bar */
+//     // top: 70px;
+//     /* Adjust the height to fit the smaller screen */
+//     max-height: 90%;
+//   }
+
+//   .menu ul {
+//     /* Add a little extra padding to the list items to improve spacing */
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//   }
+
+//   .menu .dropdown {
+//     /* Adjust the margin for better positioning */
+//     margin-bottom: 6px;
+//   }
+// }

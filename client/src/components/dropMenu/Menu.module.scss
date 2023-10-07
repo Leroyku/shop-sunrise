@@ -1,0 +1,81 @@
+$orange: rgb(251, 145, 24);
+
+.menu {
+  display: none;
+}
+.menuActive {
+  position: absolute;
+  border-radius: 5px;
+  bottom: calc(0px - var(height));
+  width: 300px;
+  background-color: #0c0c0c;
+  // box-shadow: 2px 2px 2px black;
+  // background-color: #161616;
+}
+
+.content {
+  border-radius: 5px;
+  ul {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+  }
+}
+
+.catalogLinks {
+  display: flex;
+  padding: 13px 10px;
+  background-color: #0c0c0c;
+
+  font-weight: bold;
+  font-size: 16px;
+  // cursor: pointer;
+  margin-bottom: 1px;
+
+  transition: all 0.3s ease-in-out;
+
+  span {
+    display: flex;
+    align-items: center;
+    color: $orange;
+    transition: all 0.2s ease-in-out;
+  }
+
+  // &:first-child {
+  //   border-top-left-radius: 5px;
+  //   border-top-right-radius: 5px;
+  // }
+
+  &:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &:hover {
+    span {
+      // color: #cccccf;
+      border-bottom: 1px solid $orange;
+    }
+    // background-color: $orange;
+    // color: #0c0c0c;
+  }
+}
+
+.cIcon {
+  padding-right: 5px;
+}
+
+.desktop {
+  display: flex;
+  border-radius: 5px;
+}
+
+.lastItem {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.firstItem {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
