@@ -1,0 +1,14 @@
+.customPrevArrow,
+.customNextArrow {
+  max-width: 30px;
+  min-width: 30px;
+  display: flex;
+
+  justify-content: center;
+  color: rgba(251, 145, 24, 0.3);
+  transition: all 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    color: #fb9118;
+  }
+}

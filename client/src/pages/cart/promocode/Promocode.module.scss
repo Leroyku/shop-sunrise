@@ -1,0 +1,50 @@
+.root {
+  margin: 10px 0;
+  color: #fb9118;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  input {
+    margin-top: 3px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: #fb9118 1px solid;
+    margin-right: 5px;
+    width: 60%;
+    height: 30px;
+    font-size: 16px;
+    color: #fb9118;
+  }
+  div {
+    margin-top: 3px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 32px;
+    font-size: 18px;
+    background-color: #0c0c0c;
+    color: #fb9118;
+    border-radius: 5px;
+    // border: #fb9118 1px solid;
+    transition: all 0.1s ease;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    cursor: pointer;
+    &:hover {
+      background-color: darken(#0c0c0c, 10%);
+    }
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    input {
+      width: 80%;
+    }
+  }
+}

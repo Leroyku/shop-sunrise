@@ -1,0 +1,65 @@
+$orange: rgb(251, 145, 24);
+
+.image {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // border-radius: 10px;
+}
+.swiper {
+  display: flex;
+  flex-direction: column;
+
+  width: fit-content;
+  height: 100%;
+  padding: 10px 5px;
+}
+
+@media (max-width: 740px) {
+  .image {
+    margin: 0 auto;
+  }
+  .swiper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .h2Price {
+    display: flex;
+    justify-content: center;
+
+    color: #fb9118;
+    width: 100%;
+    span {
+      margin-right: 10px;
+      color: rgb(138, 138, 141);
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 340px) {
+  .image {
+    width: 280px;
+    height: 280px;
+  }
+}

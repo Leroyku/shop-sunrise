@@ -1,0 +1,25 @@
+.root {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #161616;
+  padding: 40px;
+  flex-grow: 1;
+  h2 {
+    color: rgb(250, 144, 23);
+    margin-bottom: 10px;
+  }
+  p {
+    color: #8a8a8d;
+  }
+}
+@media (max-width: 1150px) {
+  .root {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .root {
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+}

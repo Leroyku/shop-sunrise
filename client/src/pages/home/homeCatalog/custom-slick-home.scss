@@ -1,0 +1,26 @@
+.slick-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  // padding-left: 10px;
+  // padding-right: 10px;
+}
+
+.slick-list {
+  max-height: 90px;
+  min-width: 85%;
+  max-width: 85%;
+}
+
+.slick-vertical .slick-slide {
+  border: none;
+}
+
+.hidden {
+  color: transparent;
+  &:hover {
+    cursor: auto;
+    color: transparent;
+  }
+}

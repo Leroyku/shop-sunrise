@@ -1,0 +1,67 @@
+$orange: #fb9118;
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  .modalContent {
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+
+    p {
+      color: $orange;
+      margin-bottom: 20px;
+    }
+
+    .modalButtons {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        margin-left: 10px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        transition: background-color 0.2s;
+      }
+    }
+  }
+}
+
+.first {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: $orange;
+  color: #0c0c0c;
+  margin-right: 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: #da7d12;
+  }
+}
+
+.second {
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: $orange;
+  background-color: rgb(82, 82, 82);
+  &:hover {
+    cursor: pointer;
+    background-color: #313131;
+  }
+}

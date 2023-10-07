@@ -1,0 +1,36 @@
+$orange: rgb(251, 145, 24);
+
+.root {
+  // min-height: 373px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  // justify-content: space-around;
+  div {
+    margin-bottom: 14px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h4 {
+    font-size: 14px;
+    margin-top: 15px;
+    color: $orange;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    // text-align: justify;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #8a8a8d;
+  }
+}
+
+.icons {
+  padding-right: 3px;
+}
