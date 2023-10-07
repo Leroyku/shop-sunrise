@@ -1,0 +1,63 @@
+.visually-hidden {
+  display: none;
+}
+
+.carousel-item,
+.carousel-inner {
+  border-radius: 10px;
+  height: 430px;
+}
+
+.slider {
+  margin-bottom: 5px;
+  border-radius: 10px;
+  max-width: 100%; /* Set the maximum width for the slider */
+  height: auto; /* Allow the height to adjust automatically based on aspect ratio */
+}
+
+.slider__img {
+  border-radius: 10px;
+  width: 100%; /* Make the image width 100% of its container */
+  height: 100%; /* Make the image height 100% of its container */
+}
+
+@media (max-width: 1150px) {
+  .slider {
+    width: 832px;
+  }
+}
+
+@media (max-width: 750px) {
+  .slider {
+    width: 632px;
+    height: 330px;
+  }
+  .carousel-item,
+  .carousel-inner,
+  .slider__img {
+    height: 330px;
+  }
+}
+
+@media (max-width: 570px) {
+  .slider {
+    width: 432px;
+    height: 230px;
+  }
+  .carousel-item,
+  .carousel-inner,
+  .slider__img {
+    height: 230px;
+  }
+}
+
+@media (max-width: 410px) {
+  .slider {
+    height: 180px;
+  }
+  .carousel-item,
+  .carousel-inner,
+  .slider__img {
+    height: 180px;
+  }
+}

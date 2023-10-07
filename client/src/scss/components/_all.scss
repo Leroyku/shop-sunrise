@@ -1,0 +1,17 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+// @import '../../../node_modules/bootstrap/scss/maps';
+@import '../../../node_modules/bootstrap/scss/mixins';
+// @import '../../../node_modules/bootstrap/scss/root';
+@import '../../../node_modules/bootstrap/scss/carousel';
+@import '../../../node_modules/bootstrap/scss/pagination';
+
+@import './header';
+@import './headerInformaion';
+@import './fullHeader';
+@import './carousel';
+@import './button';
+@import './categories';
+@import './sort';
+@import './item-block';
+@import './pagination-custom';

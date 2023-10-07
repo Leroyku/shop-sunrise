@@ -1,0 +1,9 @@
+.fullHeader_categories {
+  display: block;
+}
+
+@media (max-width: 1150px) {
+  .fullHeader_categories {
+    display: none;
+  }
+}

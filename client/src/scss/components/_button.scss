@@ -1,0 +1,168 @@
+@import '../variables';
+
+.button {
+  display: inline-block;
+  background-color: $orange;
+  border-radius: 5px;
+  padding: 10px 20px;
+  // min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
+  border: 1px solid transparent;
+  @include noselect();
+
+  &,
+  span {
+    color: $orange;
+  }
+
+  i,
+  span,
+  path,
+  svg {
+    transition: all $duration ease-in-out;
+  }
+
+  &:active {
+    background-color: darken($orange, 8%);
+    // transform: translateY(1px);
+  }
+
+  &--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    border-width: 2px;
+  }
+
+  &--black {
+    background-color: $black;
+
+    &:hover,
+    &:active {
+      background-color: lighten($color: $black, $amount: 10);
+    }
+  }
+
+  &--outline {
+    min-width: 100px;
+    background-color: #0c0c0c;
+    border-color: $orange;
+    &,
+    span {
+      color: $orange;
+    }
+
+    svg {
+      path {
+        fill: $orange;
+      }
+    }
+
+    &:hover {
+      background-color: $orange;
+
+      &,
+      span {
+        color: #0c0c0c;
+      }
+
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+
+    &:active {
+      background-color: darken($orange, 8%);
+    }
+  }
+
+  &__delimiter {
+    width: 1px;
+    height: 25px;
+    color: $orange;
+    background-color: rgba(232, 162, 54, 0.579);
+    margin-left: 14px;
+    margin-right: 14px;
+    transition: all $duration ease-in-out;
+  }
+
+  &--add {
+    // margin-right: 10px;
+    // min-width: 40px;
+    // max-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    width: 100%;
+    // min-height: 40px;
+    // max-height: 40px;
+    padding: 8px;
+    background-color: #0c0c0c;
+    // box-shadow: 0 20px 12px -16px rgba(250, 144, 23, 0.5);
+    transition: all 0.2s ease;
+    svg {
+      margin-right: 2px;
+    }
+
+    span {
+      color: $orange;
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: darken(#0c0c0c, 10%);
+      span {
+        color: $orange;
+      }
+
+      // box-shadow: 0 20px 12px -16px rgba(250, 144, 23, 0.9);
+    }
+    &:active {
+      background-color: darken(#0c0c0c, 10%);
+      span {
+        color: $orange;
+      }
+
+      // box-shadow: 0 20px 12px -16px rgba(250, 144, 23, 0.9);
+    }
+  }
+
+  &--cart {
+    display: flex;
+    align-items: center;
+    line-height: 23px;
+    padding: 10px;
+
+    background-color: #0c0c0c;
+    // box-shadow: 2px 2px 2px black;
+
+    svg {
+      margin-right: 8px;
+      margin-bottom: 1px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+    }
+    &:hover {
+      background-color: #0c0c0c;
+      color: $orange;
+      .button__delimiter {
+        background-color: $orange;
+      }
+      span {
+        color: $orange;
+      }
+    }
+  }
+}

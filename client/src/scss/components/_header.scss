@@ -1,0 +1,154 @@
+@import '../variables';
+
+.dropMenuHeaderAct {
+  z-index: 10;
+  position: absolute;
+  bottom: -5px;
+  left: 5px;
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  height: 62px;
+
+  z-index: 10000;
+  max-height: 70px;
+  padding: 0 10px 5px 0;
+
+  background-color: #161616;
+  border-bottom: solid #222222;
+  // border-bottom-left-radius: 5px;
+  // border-bottom-right-radius: 5px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+    padding-top: 15px;
+    width: 300px;
+
+    &:hover {
+      background-color: #0c0c0c;
+    }
+    .bars {
+      font-size: 20px;
+      padding: 0 0 1px 10px;
+      margin-right: 10px;
+      color: rgb(251, 145, 24);
+    }
+    h2 {
+      font-family: 'Rubik Dirt';
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-right: 15px;
+      color: rgb(251, 145, 24);
+      // display: none;
+    }
+    img {
+      display: none;
+      width: auto;
+      height: 40px;
+      margin-right: 15px;
+    }
+  }
+  &__menu {
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    font-size: 26px;
+    color: rgb(251, 145, 24);
+  }
+
+  &__sideL,
+  &__sideR {
+    min-height: 50px;
+    // width: 100%;
+    display: flex;
+    padding-top: 5px;
+    align-items: center;
+  }
+  &__sideL {
+    padding-top: 0;
+  }
+  &__sideR {
+    width: 100%;
+    justify-content: end;
+  }
+
+  &__cart {
+    max-height: 70px;
+    margin-left: 15px;
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  max-height: 70px;
+  justify-content: space-between;
+}
+
+@media (max-width: 1150px) {
+  .header {
+    &__logo {
+      width: fit-content;
+      .bars {
+        display: none;
+      }
+      margin-left: 10px;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+@media (max-width: 1065px) {
+  .header {
+    &__menu {
+      display: flex;
+      align-items: center;
+    }
+    &__cart {
+      display: none;
+    }
+    .logo {
+      &__img {
+        display: none;
+      }
+      &__h2 {
+        margin-left: 0;
+        display: block;
+      }
+    }
+  }
+}
+// @media (max-width: 490px) {
+//   .header {
+//     .logo {
+//       &__h2 {
+//         display: none;
+//       }
+//       &__img {
+//         width: auto;
+//         height: 31px;
+//         display: flex;
+//         margin-left: 10px;
+//       }
+//     }
+//   }
+// }
+@media (max-width: 740px) {
+  .header {
+    padding-right: 0;
+  }
+}
+@media (max-width: 380px) {
+  .header {
+    .logo {
+      &__img {
+        display: none;
+      }
+    }
+  }
+}
